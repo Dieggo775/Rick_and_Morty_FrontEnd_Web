@@ -4,11 +4,35 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'RickMorty';
+  src: url('../assets/fonts/get_schwifty.ttf') format('truetype');
+}
+
+.hero h2,
+.personagens h2 {
+  font-family: 'RickMorty', cursive;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(180deg, #0b1120, #111827);
   color: #f9fafb;
   line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo-site {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .container {
@@ -41,9 +65,11 @@ body {
 }
 
 .hero h2 {
-  font-size: 2rem;
+  font-family: 'RickMorty', Arial, sans-serif;
+  font-size: 2.2rem;
   color: #22c55e;
   margin-bottom: 15px;
+  letter-spacing: 1px;
 }
 
 .hero p {
@@ -59,9 +85,11 @@ body {
 }
 
 .personagens h2 {
+  font-family: 'RickMorty', Arial, sans-serif;
   color: #22c55e;
-  font-size: 1.9rem;
+  font-size: 2rem;
   margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
 .subtitulo {
@@ -71,7 +99,7 @@ body {
 
 .area-busca {
   background: rgba(31, 41, 55, 0.9);
-  padding: 20px;
+  padding: 60px;
   border-radius: 14px;
   display: flex;
   flex-wrap: wrap;
@@ -172,11 +200,25 @@ body {
 }
 
 .rodape {
-  background: #1f2937;
+  background: #030303;
   text-align: center;
   padding: 22px 0;
   color: #9ca3af;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 16px;
+}
+
+.footer-logo {
+  max-width: 100%;
+  width: 420px;
+  height: auto;
+  object-fit: contain;
 }
 
 @media (max-width: 768px) {
@@ -186,11 +228,15 @@ body {
 
   .hero h2,
   .personagens h2 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 
   .hero p {
     font-size: 1rem;
+  }
+
+  .area-busca {
+    padding: 24px;
   }
 
   .area-busca input,
@@ -201,5 +247,9 @@ body {
 
   .card img {
     height: 260px;
+  }
+
+  .footer-logo {
+    width: 260px;
   }
 }
