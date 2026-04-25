@@ -1,199 +1,94 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #0f172a, #111827);
-    color: #f9fafb;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #0b1120, #111827);
+  color: #f9fafb;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .topo {
-    background: #1f2937;
-    text-align: center;
-    padding: 30px 20px;
-    border-bottom: 2px solid #22c55e;
+  background: linear-gradient(90deg, #111827, #1f2937);
+  border-bottom: 3px solid #22c55e;
+  padding: 32px 0;
+  text-align: center;
 }
 
 .topo h1 {
-    font-size: 2.2rem;
-    color: #22c55e;
+  font-size: 2.4rem;
+  color: #22c55e;
+  margin-bottom: 10px;
 }
 
 .topo p {
-    margin-top: 10px;
-    color: #d1d5db;
-}
-
-.hero {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-    text-align: center;
-}
-
-.hero h2,
-.personagens h2 {
-    margin-bottom: 15px;
-    color: #22c55e;
-}
-
-.hero p,
-.subtitulo {
-    color: #faf9f9;
-}
-
-.personagens {
-    max-width: 1200px;
-    margin: 0 auto 50px;
-    padding: 0 20px;
-    text-align: center;
-}
-
-#btn-carregar {
-    margin-top: 20px;
-    padding: 12px 24px;
-    background: #22c55e;
-    color: #111827;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#btn-carregar:hover {
-    background: #16a34a;
-}
-
-#cards-container {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 20px;
-}
-
-.card {
-    background: #1f2937;
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
-    text-align: left;
-    padding-bottom: 15px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.45);
-}
-
-.card img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-}
-
-.card-conteudo {
-    padding: 15px;
-}
-
-.card h3 {
-    margin-bottom: 10px;
-    color: #22c55e;
-    font-size: 1.2rem;
-}
-
-.card p {
-    margin-bottom: 6px;
-    color: #d1d5db;
-    font-size: 0.95rem;
-}
-
-.status-alive {
-    color: #4ade80;
-    font-weight: bold;
-}
-
-.status-dead {
-    color: #f87171;
-    font-weight: bold;
-}
-
-.status-unknown {
-    color: #facc15;
-    font-weight: bold;
-}
-
-.rodape {
-    text-align: center;
-    padding: 20px;
-    background: #1f2937;
-    color: #9ca3af;
-    margin-top: 40px;
-}
-
-.mensagem {
-    grid-column: 1 / -1;
-    text-align: center;
-    padding: 20px;
-    font-size: 1rem;
-    color: #e5e7eb;
-}
-
-.area-busca {
-  margin-top: 20px;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.area-busca input {
-  padding: 12px 14px;
-  width: 280px;
-  max-width: 100%;
-  border: none;
-  border-radius: 8px;
-  outline: none;
+  color: #d1d5db;
   font-size: 1rem;
 }
 
-.area-busca button {
-  padding: 12px 20px;
-  border: none;
-  border-radius: 8px;
-  background: #22c55e;
-  color: #111827;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
+.hero {
+  padding: 50px 0 30px;
+  text-align: center;
 }
 
-.area-busca button:hover {
-  background: #16a34a;
+.hero h2 {
+  font-size: 2rem;
+  color: #22c55e;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #e5e7eb;
+  font-size: 1.05rem;
+}
+
+.personagens {
+  padding: 30px 0 60px;
+  text-align: center;
+}
+
+.personagens h2 {
+  color: #22c55e;
+  font-size: 1.9rem;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  color: #d1d5db;
+  margin-bottom: 25px;
 }
 
 .area-busca {
-  margin-top: 20px;
+  background: rgba(31, 41, 55, 0.9);
+  padding: 20px;
+  border-radius: 14px;
   display: flex;
-  gap: 10px;
-  justify-content: center;
   flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 35px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
 .area-busca input,
 .area-busca select {
   padding: 12px 14px;
   min-width: 220px;
-  max-width: 100%;
   border: none;
   border-radius: 8px;
-  outline: none;
   font-size: 1rem;
+  outline: none;
 }
 
 .area-busca button {
@@ -211,17 +106,100 @@ body {
   background: #16a34a;
 }
 
-@media (max-width: 600px) {
+#cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: #1f2937;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.card-conteudo {
+  padding: 18px;
+}
+
+.card h3 {
+  color: #22c55e;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #d1d5db;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.status-alive {
+  color: #4ade80;
+  font-weight: bold;
+}
+
+.status-dead {
+  color: #f87171;
+  font-weight: bold;
+}
+
+.status-unknown {
+  color: #facc15;
+  font-weight: bold;
+}
+
+.mensagem {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 20px;
+  color: #e5e7eb;
+  font-size: 1rem;
+}
+
+.rodape {
+  background: #1f2937;
+  text-align: center;
+  padding: 22px 0;
+  color: #9ca3af;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 768px) {
   .topo h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .hero h2,
   .personagens h2 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
-  #btn-carregar {
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .area-busca input,
+  .area-busca select,
+  .area-busca button {
     width: 100%;
+  }
+
+  .card img {
+    height: 260px;
   }
 }
